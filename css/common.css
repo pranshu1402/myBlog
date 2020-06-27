@@ -88,9 +88,16 @@ aside {
 
 .main-container {
 	flex-basis: 70%;
-	border: var(--border-medium);
-	border-color: var(--sec-border-color);
 	margin: var(--margin-large) auto 0;
+}
+
+.main-container h2 {
+	border-bottom: var(--border-medium);
+	border-color: var(--sec-border-color);
+}
+
+.content, .form-content, .form-group {
+	margin: var(--margin-medium);
 }
 
 /* footer styling */
