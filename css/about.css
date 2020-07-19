@@ -1,1 +1,21 @@
-    
+#skills {
+	display: grid;
+	grid-template-rows: 10% 20% 25% 25%;
+	grid-gap: 10px;
+}
+
+#skills div {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: var(--margin-medium);
+}
+
+#skills ul {
+	display: block;
+}
+
+#skills li {
+	display: inline-block;
+	min-width: 20%;
+	margin: 0 var(--margin-medium)
+}

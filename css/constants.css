@@ -16,7 +16,7 @@
 /* Shadows */
 :root {
 	--shadow-grey-light: 0 0 15px 3px #eee;
-	--shadow-grey-dark: 0 0 20px 1px #aaa;
+	--shadow-grey-dark: 0 0 20px 1px rgba(170, 170, 170, 0.3);
 }
 
 /* Spacings */

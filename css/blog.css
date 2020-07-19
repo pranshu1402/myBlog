@@ -6,7 +6,26 @@
 	display: inline-block;
 	margin: var(--margin-medium);
 	padding: var(--padding-medium);
+	border-top: 2px solid orange;
 	max-width: 450px;
 	box-sizing: border-box;
 	box-shadow: var(--shadow-grey-dark);
+}
+
+.blog-item a {
+	color: darkblue;
+}
+
+.blog-container ul {
+	list-style-type: disc;
+	display: block;
+}
+
+.blog-container li {
+	display: block;
+	margin-left: var(--margin-large);
+}
+
+.blog-container a {
+	color: blue;
 }

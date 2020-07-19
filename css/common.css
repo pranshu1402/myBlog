@@ -13,7 +13,7 @@ header {
 
 .logo-container {
 	text-align: center;
-	width: 100%;
+	width: 30%;
 	max-width: 350px;
 	border-right: var(--border-medium);
 	border-color: var(--sec-border-color);
@@ -89,15 +89,48 @@ aside {
 .main-container {
 	flex-basis: 70%;
 	margin: var(--margin-large) auto 0;
+	height: calc(100vh - var(--header-height) - var(--margin-large));
+	overflow-y: auto;
 }
 
 .main-container h2 {
+	text-transform: uppercase;
+	padding-bottom: var(--padding-small);
 	border-bottom: var(--border-medium);
 	border-color: var(--sec-border-color);
 }
 
-.content, .form-content, .form-group {
-	margin: var(--margin-medium);
+.content {
+	margin-left: var(--margin-large);
+	padding: 0 var(--padding-small) var(--padding-medium);
+}
+
+.form-content, .form-group {
+	margin-top: var(--margin-medium);
 }
 
 /* footer styling */
+
+@media screen and (max-width: 767px) {
+	main {
+		flex-direction: column;
+	}
+
+	aside {
+		flex-basis: 100%;
+		max-width: 100%;
+		order: 1;
+		border-top: var(--border-medium);
+		border-right: 0;
+		border-color: var(--sec-border-color);
+	}
+
+	.content {
+		margin-left: var(--margin-medium);
+		max-width: 80%;
+	}
+
+	.form-content, .form-description {
+		margin-left: var(--margin-medium);
+	}
+}
